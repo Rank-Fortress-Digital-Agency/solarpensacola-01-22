@@ -1,182 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        * {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 40px 10%;
+        background: #f5f5f5;
+      }
+      .main-wrapper {
+        background: white;
+        padding: 40px;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      section.head,
+      section.youtube-embed {
+        text-align: center;
+      }
+      .button-link {
+        display: block;
+        margin: 20px 0 0 0;
+        padding: 10px 40px;
+        width: fit-content;
+        background: #fadd07;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s transform ease-in-out;
+      }
+      .button-link:hover {
+        transform: scale(1.05);
+      }
+      h1 {
+        font-size: 34px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        text-align: justify;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+      }
+      img {
+        max-width: 100%;
+      }
+      .two-col {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+      }
+      .two-col div {
+        width: 50%;
+      }
+      @media only screen and (max-width: 900px) {
         body {
-            padding: 40px 10%;
-            background: #F5F5F5;
-        }
-        .main-wrapper {
-            background: white;
-            padding: 40px;
-        }
-        section {
-            margin-bottom: 60px;
-        }
-        section.head,
-        section.youtube-embed {
-            text-align: center;
-        }
-        .button-link {
-            display: block;
-            margin: 20px 0 0 0;
-            padding: 10px 40px;
-            width: fit-content;
-            background: #fadd07;
-            border-radius: 5px;
-            text-decoration: none;
-            color: black;
-            transition: .3s transform ease-in-out;
-        }
-        .button-link:hover {
-            transform: scale(1.05);
-        }
-        h1 {
-            font-size: 34px;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-        p {
-            text-align: justify;
-            margin-bottom: 10px;
-            line-height: 1.5rem;
-        }
-        img {
-            max-width: 100%;
+          padding: 0;
         }
         .two-col {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
+          flex-direction: column;
         }
         .two-col div {
-            width: 50%;
+          width: 100%;
         }
-        @media only screen and (max-width: 900px) {
-            body {
-                padding: 0;
-            }
-            .two-col {
-                flex-direction: column;
-            }
-            .two-col div {
-                width: 100%;
-            }
-            .main-wrapper {
-                padding: 5%;
-            }
+        .main-wrapper {
+          padding: 5%;
         }
+      }
     </style>
-    <title>Solar panels are a great way to save money on your electric bill. | Solar Panels Pensacola</title>
-</head>
-<body>
+    <title>
+      Solar panels are a great way to save money on your electric bill. | Solar
+      Panels Pensacola
+    </title>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <section style="background-image: url(https://solarpensacola.com/wp-content/uploads/2021/12/Solar-Panels-Pensacola-Solar-Installation-1.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; min-height: 300px; display:flex; flex-direction: column; justify-content: center; box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.384);" class="head">
-            <h1 style="color: white; font-size: 50px; font-family: Oswald;">Solar panels are a great way to save <br>money on your electric bill.</h1>
-        </section>
+      <section
+        style="
+          background-image: url(https://solarpensacola.com/wp-content/uploads/2021/12/Solar-Panels-Pensacola-Solar-Installation-1.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.384);
+        "
+        class="head"
+      >
+        <h1 style="color: white; font-size: 50px; font-family: Oswald">
+          Solar panels are a great way to save <br />money on your electric
+          bill.
+        </h1>
+      </section>
 
-        <section>
-            <iframe width="100%" height="600" src="https://www.youtube.com/embed/E_r0SGJudzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a class="button-link"
-                href="https://solarpensacola.com/solar-panels-are-a-great-way-to-save-money-on-your-electric-bill/">Read Post</a>
-        </section>
+      <section>
+        <iframe
+          width="100%"
+          height="600"
+          src="https://www.youtube.com/embed/E_r0SGJudzc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <a
+          class="button-link"
+          href="https://solarpensacola.com/solar-panels-are-a-great-way-to-save-money-on-your-electric-bill/"
+          >Read Post</a
+        >
+      </section>
 
-        <section>
-            <p>People who switch to solar panels will see their electric bills drop by one hundred percent. If you want to install solar panels on your roof, there are a few things that you need to know. The first thing is that solar panels can cause your roof to leak if they aren’t installed correctly.</p>
-            <p>If you decide to take the leap and install solar panels on your roof, here are some of the things that you will need to keep in mind.</p>
-        </section>
+      <section>
+        <p>
+          People who switch to solar panels will see their electric bills drop
+          by one hundred percent. If you want to install solar panels on your
+          roof, there are a few things that you need to know. The first thing is
+          that solar panels can cause your roof to leak if they aren’t installed
+          correctly.
+        </p>
+        <p>
+          If you decide to take the leap and install solar panels on your roof,
+          here are some of the things that you will need to keep in mind.
+        </p>
+      </section>
 
-        <section style="background-color: #eaeaea; padding: 50px">
+      <section style="background-color: #eaeaea; padding: 50px">
+        <div style="display: flex; justify-content: center">
+          <img
+            src="https://solarpensacola.com/wp-content/uploads/2021/12/Solar-Panels-Pensacola-Pensacola-Solar-Installation-1024x576.jpg"
+            alt="Solar Panel Installation Pensacola, FL"
+          />
+        </div>
+        <br />
+        <h2 style="text-align: center">
+          The more solar panels you have, the higher your electric bill will be.
+        </h2>
+        <hr />
+        <br />
+        <p>
+          For this reason, it is best to have solar panels installed one at a
+          time so you can see how much of an impact they are having before
+          upgrading.
+        </p>
+        <p>
+          If you are planning to get solar panels installed on your home or
+          business, be sure to follow the tips below:
+        </p>
+        <br />
+        <ol style="padding-left: 50px">
+          <li>
+            Plan for future expansions – If you are planning to increase the
+            number of solar panels you have shortly then they should be wired
+            into your system ahead of time. This way there is not an additional
+            cost for wiring them in after installation, and it will save time
+            overall.
+          </li>
+          <br />
+          <li>
+            Careful sizing – When having solar panel installation Pensacola
+            done, make sure to carefully consider how much energy is needed and
+            what type of roofing is on your house or building.
+          </li>
+          <br />
+          <li>
+            Pick a reputable installer – It’s important that the company doing
+            the work has been doing it for a long time and is familiar with the
+            area.
+          </li>
+          <br />
+          <li>
+            Do some digging – Because solar panel installation in Pensacola can
+            be expensive, you should do some research before committing to
+            anyone. Make sure that the installer has all necessary
+            certifications and check their reviews on popular solar review sites
+            like Yelp. Remember, customer service is key! An easy way to find
+            out if they are reputable or not is by asking them questions about
+            their history of business and how they plan on executing your
+            project.
+          </li>
+          <br />
+          <li>
+            Be present during installations – This will help ensure everything
+            goes smoothly without any problems arising at the last minute.
+          </li>
+          <br />
+          <li>
+            Follow up after installation – After having solar panels installed
+            on your home or business, it’s important to follow up. You can do
+            this by calling the installer or simply asking them when they plan
+            on being in the area for maintenance, if necessary.
+          </li>
+        </ol>
+        <br />
+        <p>
+          We hope this article was informative and gave you some ideas of what
+          to expect when having solar panels installed on your home or business!
+        </p>
+        <p>
+          If you are interested in getting solar panels installed, contact Solar
+          Pensacola!
+        </p>
+      </section>
 
-            <div style="display:flex; justify-content:center">
-                <img src="https://solarpensacola.com/wp-content/uploads/2021/12/Solar-Panels-Pensacola-Pensacola-Solar-Installation-1024x576.jpg" alt="Solar Panel Installation Pensacola, FL">
-            </div>
-            <br>
-            <h2 style="text-align:center">The more solar panels you have, the higher your electric bill will be.</h2>
-            <hr>
-            <br>
-            <p>For this reason, it is best to have solar panels installed one at a time so you can see how much of an impact they are having before upgrading.</p>
-            <p>If you are planning to get solar panels installed on your home or business, be sure to follow the tips below:</p><br>
-            <ol style="padding-left: 50px;">
-                <li>Plan for future expansions – If you are planning to increase the number of solar panels you have shortly then they should be wired into your system ahead of time. This way there is not an additional cost for wiring them in after installation, and it will save time overall.</li><br>
-                <li>Careful sizing – When having solar panel installation Pensacola done, make sure to carefully consider how much energy is needed and what type of roofing is on your house or building.</li><br>
-                <li>Pick a reputable installer – It’s important that the company doing the work has been doing it for a long time and is familiar with the area.</li><br>
-                <li>Do some digging – Because solar panel installation in Pensacola can be expensive, you should do some research before committing to anyone. Make sure that the installer has all necessary certifications and check their reviews on popular solar review sites like Yelp. Remember, customer service is key! An easy way to find out if they are reputable or not is by asking them questions about their history of business and how they plan on executing your project.</li><br>
-                <li>Be present during installations – This will help ensure everything goes smoothly without any problems arising at the last minute.</li><br>
-                <li>Follow up after installation – After having solar panels installed on your home or business, it’s important to follow up. You can do this by calling the installer or simply asking them when they plan on being in the area for maintenance, if necessary.</li>
-            </ol>
-            <br>
-            <p>We hope this article was informative and gave you some ideas of what to expect when having solar panels installed on your home or business!</p>
-            <p>If you are interested in getting solar panels installed, contact Solar Pensacola!</p>
+      <section>
+        <h2>
+          Solar panel installation is expensive and takes time – it may not be
+          worth the investment if you’re only living in a house for a few years.
+        </h2>
+        <p>
+          However, if you’re sure that solar panel installation is right for
+          you, then check out these tips on how to reduce the cost of your
+          system.
+        </p>
+        <p>
+          Your roof is the best place for solar panels because it’s not shaded
+          by trees and nearby buildings. If your roof needs repair or
+          replacement, consider using the opportunity to make electricity as
+          well: solar panels can be included in a new roof at little cost.
+        </p>
+        <p>
+          Don’t neglect aesthetics: most consumers want their home’s appearance
+          to remain unchanged. While metal roofs are generally less expensive
+          than standard roofs with PV modules integrated into them, there may
+          also be fewer color choices and potential damage from hail and strong
+          winds. It might be better to opt for invisible integration (utilizing
+          S-5! dry-deck flashing, for example) where possible.
+        </p>
+        <p>
+          If your roof is shaded by trees or shadows cast by nearby buildings,
+          consider ground installation for solar panels. It’s estimated that
+          roughly half of all
+          <a href="https://solarpensacola.com/residential-solar/"
+            >residential installations</a
+          >
+          in the U.S. are now on ground mounts due to their lower cost and
+          easier installation over unlevel terrain.
+        </p>
+        <p>
+          Use the right equipment: if you’re installing solar panels on a new
+          home, make sure you use UL-certified modules. If using microinverters
+          (which convert DC electricity into AC), be aware that they aren’t
+          compatible with single-phase power, which can be found in older homes.
+        </p>
+        <p>
+          Be aware of the costs associated with solar panel installation. For
+          example, you may need to buy a separate inverter and battery for your
+          system if your home is off the grid.
+        </p>
+        <p>
+          If you’re going to be selling your home soon, consider what will
+          happen to your solar system after your departure. It might be wise to
+          charge a lower rate to the new homeowners for solar power, or even
+          allow them to keep your system.
+        </p>
+        <p>
+          Solar panel installation is a great investment not only because it’s
+          better for the environment but also because you’ll save money on
+          electricity in the long term. However, if solar just isn’t right for
+          your home, that’s okay too! There are other ways to conserve
+          electricity.
+        </p>
+        <p>
+          If you’d like more information on solar panel installation or any of
+          the products contained within, please feel free to stop by our website
+          at http://www.solar-estimate-texas.com where you’ll find everything
+          you’ll need to make the best decision for your home!
+        </p>
+        <a class="button-link" href="https://solarpensacola.com/">Visit Us</a>
+      </section>
 
-        </section>
+      <section style="background-color: #eaeaea; padding: 50px">
+        <h2 style="text-align: center">
+          If you live in an area that’s prone to natural disasters, then solar
+          panels might not be the best option because they could get damaged
+          during storms or hurricanes.
+        </h2>
+        <p>
+          If an electrical system is installed during a storm or hurricane, then
+          there is a high chance that the solar panels will get damaged too. The
+          debris from trees and other natural elements could fall on top of your
+          solar panel and break them. Damaged solar panels can affect how much
+          electricity they supply to your home or business, and if they aren’t
+          repaired in time, they might stop working all together. It’s important
+          to keep this in mind before you decide to go solar because some areas
+          are more susceptible to weather-related disasters than others.
+        </p>
+        <p>
+          Using Solar Energy During Natural Disasters: If you use solar energy
+          and happen to live in an area that gets very hot summers and cold
+          winters, then installing solar panels could be a good idea because it
+          can be used year-round.
+        </p>
+        <p>
+          If you live in an area that experiences hot summers and cold winters,
+          then solar panels can be beneficial because they can provide energy
+          for both seasons. Solar panels are also helpful during the winter
+          months when there’s not as much fun. During colder months, solar
+          panels collect heat from the sun and then transfer it into your home
+          or business which makes your heating system more effective.
+        </p>
+        <p>
+          Using Solar Energy When There’s A Lot Of Clouds: It’s important to
+          keep in mind how often it will be cloudy throughout the day before you
+          decide to go solar too because clouds can affect how much sunlight
+          hits your solar panel. Not getting enough sunlight could prevent your
+          solar panel from producing enough electricity so if you live somewhere
+          where there’s a lot of cloud cover, then solar panels might not be the
+          best option.
+        </p>
+        <p>
+          If you’re looking to use solar energy during the day, then perhaps
+          solar panels aren’t the best option for you because cloudy days can
+          prevent your solar panel from getting enough sunlight. Clouds are made
+          up of water vapor which blocks out sunlight so if it’s overcast or
+          cloudy outside, then there will be less sunlight hitting your solar
+          panel. When there are more clouds in the sky, it means that it’s less
+          sunny and therefore harder for your solar panel to produce
+          electricity. Solar panels work best when they have unobstructed access
+          to direct sunlight throughout the day so if there are always clouds in
+          the sky where you live, then could affect how much energy you get
+          overall.
+        </p>
+        <p>
+          Solar Energy During Winter: Using solar energy during the winter
+          months could be another reason why you want to consider using it if
+          your area experiences cold winters because solar panels can prevent
+          you from having to use supplemental heating. Not only will you save
+          money on electricity, but you’ll also lower your carbon footprint over
+          time too.
+        </p>
+        <p>
+          If you live in an area that gets very chilly during the winter months,
+          then solar panels are a great idea because they provide clean energy
+          for colder seasons when there’s less sunlight available. Solar panels
+          collect heat from the sun which is stored inside of them and then this
+          stored heat is transferred to your home or business. This makes it
+          easier for you to not have to rely on other sources of heated air,
+          making your heating system more efficient.
+        </p>
+        <p>
+          Having a backup power source is always a good idea, and solar panels
+          are a great option if you want to make sure that your home or business
+          has access to an alternative energy source. If you happen to live in
+          an area that experiences regular lighting storms, then it’s important
+          that you research which types of inverters can be installed with solar
+          photovoltaic systems before going ahead with the installation process.
+        </p>
+      </section>
 
-        <section>
-            <h2>Solar panel installation is expensive and takes time – it may not be worth the investment if you’re only living in a house for a few years.</h2>
-            <p>However, if you’re sure that solar panel installation is right for you, then check out these tips on how to reduce the cost of your system.</p>
-            <p>Your roof is the best place for solar panels because it’s not shaded by trees and nearby buildings. If your roof needs repair or replacement, consider using the opportunity to make electricity as well: solar panels can be included in a new roof at little cost.</p>
-            <p>Don’t neglect aesthetics: most consumers want their home’s appearance to remain unchanged. While metal roofs are generally less expensive than standard roofs with PV modules integrated into them, there may also be fewer color choices and potential damage from hail and strong winds. It might be better to opt for invisible integration (utilizing S-5!  dry-deck flashing, for example) where possible.</p>
-            <p>If your roof is shaded by trees or shadows cast by nearby buildings, consider ground installation for solar panels. It’s estimated that roughly half of all <a href="https://solarpensacola.com/residential-solar/">residential installations</a> in the U.S. are now on ground mounts due to their lower cost and easier installation over unlevel terrain.</p>
-            <p>Use the right equipment: if you’re installing solar panels on a new home, make sure you use UL-certified modules. If using microinverters (which convert DC electricity into AC), be aware that they aren’t compatible with single-phase power, which can be found in older homes.</p>
-            <p>Be aware of the costs associated with solar panel installation. For example, you may need to buy a separate inverter and battery for your system if your home is off the grid.</p>
-            <p>If you’re going to be selling your home soon, consider what will happen to your solar system after your departure. It might be wise to charge a lower rate to the new homeowners for solar power, or even allow them to keep your system.</p>
-            <p>Solar panel installation is a great investment not only because it’s better for the environment but also because you’ll save money on electricity in the long term. However, if solar just isn’t right for your home, that’s okay too! There are other ways to conserve electricity.</p>
-            <p>If you’d like more information on solar panel installation or any of the products contained within, please feel free to stop by our website at http://www.solar-estimate-texas.com where you’ll find everything you’ll need to make the best decision for your home!</p>
-            <a class="button-link"
-                href="https://solarpensacola.com/">Visit Us</a>
-        </section>
+      <section>
+        <h2>
+          Solar panels don’t work well at night because there isn’t enough solar
+          energy being produced – this means lower savings from using them.
+        </h2>
+        <hr />
+        <br />
+        <p>
+          However, when coupled with a battery, solar energy is stored and used
+          later in the day – and at night. By
+          <a href="https://solarpensacola.com/solar_energy_contractor/"
+            >installing a solar panel system in Pensacola</a
+          >
+          you can save money on your electric bill by using clean renewable
+          solar energy!
+        </p>
+        <p>
+          The fact that solar is a clean and renewable resource makes it
+          attractive to buyers, but the bottom line is that solar panels can
+          save users hundreds of dollars per year on their electric bills.
+        </p>
+        <p>
+          With rising electricity costs and the terms of your initiative with
+          local power companies, now may be the right time for you to install
+          solar panel installations in Pensacola! For those who are looking for
+          ways, they can conserve energy and save money, installing a solar
+          panel system could be an option worth considering.
+        </p>
+        <a
+          class="button-link"
+          href="https://google.com/maps/?cid=18370195428417117280"
+          >Find Us Here!</a
+        >
+      </section>
 
-        <section style="background-color:#eaeaea; padding: 50px">
-            <h2 style="text-align: center">If you live in an area that’s prone to natural disasters, then solar panels might not be the best option because they could get damaged during storms or hurricanes.</h2>
-            <p>If an electrical system is installed during a storm or hurricane, then there is a high chance that the solar panels will get damaged too. The debris from trees and other natural elements could fall on top of your solar panel and break them. Damaged solar panels can affect how much electricity they supply to your home or business, and if they aren’t repaired in time, they might stop working all together. It’s important to keep this in mind before you decide to go solar because some areas are more susceptible to weather-related disasters than others.</p>
-            <p>Using Solar Energy During Natural Disasters: If you use solar energy and happen to live in an area that gets very hot summers and cold winters, then installing solar panels could be a good idea because it can be used year-round.</p>
-            <p>If you live in an area that experiences hot summers and cold winters, then solar panels can be beneficial because they can provide energy for both seasons. Solar panels are also helpful during the winter months when there’s not as much fun. During colder months, solar panels collect heat from the sun and then transfer it into your home or business which makes your heating system more effective.</p>
-            <p>Using Solar Energy When There’s A Lot Of Clouds: It’s important to keep in mind how often it will be cloudy throughout the day before you decide to go solar too because clouds can affect how much sunlight hits your solar panel. Not getting enough sunlight could prevent your solar panel from producing enough electricity so if you live somewhere where there’s a lot of cloud cover, then solar panels might not be the best option.</p>
-            <p>If you’re looking to use solar energy during the day, then perhaps solar panels aren’t the best option for you because cloudy days can prevent your solar panel from getting enough sunlight. Clouds are made up of water vapor which blocks out sunlight so if it’s overcast or cloudy outside, then there will be less sunlight hitting your solar panel. When there are more clouds in the sky, it means that it’s less sunny and therefore harder for your solar panel to produce electricity. Solar panels work best when they have unobstructed access to direct sunlight throughout the day so if there are always clouds in the sky where you live, then could affect how much energy you get overall.</p>
-            <p>Solar Energy During Winter: Using solar energy during the winter months could be another reason why you want to consider using it if your area experiences cold winters because solar panels can prevent you from having to use supplemental heating. Not only will you save money on electricity, but you’ll also lower your carbon footprint over time too.</p>
-            <p>If you live in an area that gets very chilly during the winter months, then solar panels are a great idea because they provide clean energy for colder seasons when there’s less sunlight available. Solar panels collect heat from the sun which is stored inside of them and then this stored heat is transferred to your home or business. This makes it easier for you to not have to rely on other sources of heated air, making your heating system more efficient.</p>
-            <p>Having a backup power source is always a good idea, and solar panels are a great option if you want to make sure that your home or business has access to an alternative energy source. If you happen to live in an area that experiences regular lighting storms, then it’s important that you research which types of inverters can be installed with solar photovoltaic systems before going ahead with the installation process.</p>
-        </section>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d880848.218471699!2d-86.850042!3d30.413037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef00b69a54e9c60!2sSolar%20Panels%20Pensacola!5e0!3m2!1sen!2sph!4v1647419312329!5m2!1sen!2sph"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          >Solar%20Panel%20Installation%20Pensacola,%20FL</iframe
+        >
+      </section>
 
-        <section>
-            <h2>Solar panels don’t work well at night because there isn’t enough solar energy being produced – this means lower savings from using them.</h2>
-            <hr>
-            <br>
-            <p>However, when coupled with a battery, solar energy is stored and used later in the day – and at night. By <a href="https://solarpensacola.com/solar_energy_contractor/">installing a solar panel system in Pensacola</a> you can save money on your electric bill by using clean renewable solar energy!</p>
-            <p>The fact that solar is a clean and renewable resource makes it attractive to buyers, but the bottom line is that solar panels can save users hundreds of dollars per year on their electric bills.</p>
-            <p>With rising electricity costs and the terms of your initiative with local power companies, now may be the right time for you to install solar panel installations in Pensacola! For those who are looking for ways, they can conserve energy and save money, installing a solar panel system could be an option worth considering.</p>
-            <a class="button-link"
-                href="https://google.com/maps/?cid=18370195428417117280">Find Us Here!</a>
-        </section>
+      <section>
+        <h2>Things to do in Pensacola, FL</h2>
+        <iframe
+          src="https://www.planetware.com/tourist-attractions-/pensacola-us-fl-pens.htm"
+          style="border: 0px #ffffff none"
+          name="myiFrame"
+          scrolling="no"
+          frameborder="1"
+          marginheight="0px"
+          marginwidth="0px"
+          height="400px"
+          width="100%"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d880848.218471699!2d-86.850042!3d30.413037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfef00b69a54e9c60!2sSolar%20Panels%20Pensacola!5e0!3m2!1sen!2sph!4v1647419312329!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">Solar%20Panel%20Installation%20Pensacola,%20FL</iframe>
-        </section>
+      <section>
+        <h2>Pensacola, FL News</h2>
+        <iframe
+          src="https://weartv.com/"
+          style="border: 0px #ffffff none"
+          name="myiFrame"
+          scrolling="no"
+          frameborder="1"
+          marginheight="0px"
+          marginwidth="0px"
+          height="400px"
+          width="100%"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-        <section>
-            <h2>Things to do in Pensacola, FL</h2>
-            <iframe src="https://www.planetware.com/tourist-attractions-/pensacola-us-fl-pens.htm" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
-        </section>
-
-        <section>
-            <h2>Pensacola, FL News</h2>
-            <iframe src="https://weartv.com/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
-        </section>
-
-
-
-
+      <section>
+        <a
+          target="_bLank"
+          href="https://rank-fortress-digital-agency.github.io/solarpensacola-01-22/"
+          >https://rank-fortress-digital-agency.github.io/solarpensacola-01-22/</a
+        ><br />
+        <a
+          target="_bLank"
+          href="http://solarpensacola-01-22.s3-website-us-west-2.amazonaws.com/"
+          >http://solarpensacola-01-22.s3-website-us-west-2.amazonaws.com/</a
+        ><br />
+        <a target="_bLank" href="https://confident-curran-13daa3.netlify.app/"
+          >https://confident-curran-13daa3.netlify.app/</a
+        >
+      </section>
     </div>
-</body>
+  </body>
 </html>
